@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="iletisim.js">
+    <link rel="stylesheet" href="contact.php">
+</head>
+<body style="background-image: linear-gradient( red ,green ,blue ,white); height: 100vh;">
+    <h2>İletişim Formu</h2>
+    <form id="contactForm" action="http://localhost/contactpage/contact.php" method="POST">
+        <label for="name">İsim:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <span id="nameError" style="color: red;"></span><br>
+        
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <span id="emailError" style="color: red;"></span><br>
+        
+        <label for="message">Mesaj:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <span id="messageError" style="color: red;"></span><br>
+        
+        <button type="submit">Gönder</button>
+    </form>
+    
+    <script src="contact.js"></script>
+</body>
+</html>
